@@ -1,10 +1,11 @@
-package com.example.app
+package com.example.app.activities
 
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.app.R
 
 
 class MainActivity : AppCompatActivity() {
@@ -27,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnFetchData.setOnClickListener {
-            //val intent = Intent(this, FetchingActivity::class.java)
-           // startActivity(intent)
+            val intent = Intent(this, FetchingActivity::class.java)
+            startActivity(intent)
         }
 
     }

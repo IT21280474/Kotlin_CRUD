@@ -1,4 +1,4 @@
-package com.example.app
+package com.example.app.models
 
 data class DesignModel (
     var designId: String? = null,
