@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6F6F6">
+    android:background="#FFFFFF">
 
     <TextView
         android:id="@+id/textView2"
@@ -12,6 +12,7 @@
         android:layout_height="119dp"
         android:layout_marginStart="18dp"
         android:text="Tempsmss.com Is a Free Service for Receiving Temporary SMS Messages. No Need to Register an Account. Just Choose a Temp Number Then Utilize It to Get $25"
+        android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintStart_toEndOf="@+id/imageView" />
 
@@ -33,6 +34,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginBottom="16dp"
         android:text="Tempsmss.com Is a Free Service for Receiving Temporary SMS Messages. No Need to Register an Account. Just Choose a Temp Number Then Utilize It to Get $35"
+        android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintStart_toEndOf="@+id/imageView2" />
 
@@ -40,13 +42,14 @@
         android:id="@+id/textView3"
         android:layout_width="192dp"
         android:layout_height="157dp"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="44dp"
         android:text="Tempsmss.com Is a Free Service for Receiving Temporary SMS Messages. No Need to Register an Account. Just Choose a Temp Number Then Utilize It to Get  $30"
+        android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
