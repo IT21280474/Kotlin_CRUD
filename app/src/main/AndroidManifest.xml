@@ -13,6 +13,10 @@
         android:theme="@style/Theme.App"
         tools:targetApi="31">
 
+        <activity
+            android:name=".activities.DesignDetailsActivity"
+            android:exported="true"/>
+
 
         <activity
             android:name=".adapters.DesignAdapter"

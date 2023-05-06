@@ -1,5 +1,6 @@
 package com.example.app.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
@@ -49,8 +50,24 @@ class FetchingActivity : AppCompatActivity()  {
                         val designData = designSnap.getValue(DesignModel::class.java)
                         designList.add(designData!!)
                     }
+
                     val mAdapter = DesignAdapter(designList)
                     designRecyclerView.adapter = mAdapter
+
+                    mAdapter.setOnItemClickListener(object : DesignAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+
+                            val intent = Intent(this@FetchingActivity, DesignDetailsActivity::class.java)
+
+                            //put extras
+                            intent.putExtra("designId", designList[position].designId)
+                            intent.putExtra("designName", designList[position].designName)
+                            intent.putExtra("designDescription", designList[position].designDescription)
+                            intent.putExtra("designPrice", designList[position].designPrice)
+                            startActivity(intent)
+                        }
+
+                    })
 
                     designRecyclerView.visibility = View.VISIBLE
                     tvLoadingData.visibility = View.GONE
