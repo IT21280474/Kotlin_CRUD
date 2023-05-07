@@ -19,17 +19,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        btnInsertData = findViewById(R.id.btnInsertData)
+       btnInsertData = findViewById(R.id.btnInsertData)
         btnFetchData = findViewById(R.id.btnFetchData)
 
-        btnInsertData.setOnClickListener {
+       btnInsertData.setOnClickListener {
             val intent = Intent(this, InsertionActivity::class.java)
-            startActivity(intent)
-        }
+           startActivity(intent)
+       }
 
-        btnFetchData.setOnClickListener {
+       btnFetchData.setOnClickListener {
             val intent = Intent(this, FetchingActivity::class.java)
-            startActivity(intent)
+           startActivity(intent)
         }
 
     }
