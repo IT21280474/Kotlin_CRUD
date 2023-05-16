@@ -80,7 +80,8 @@ class DesignDetailsActivity : AppCompatActivity() {
     //Updating Function
     private fun openUpdateDialog(
         designId: String,
-        designName: String
+        designName: String,
+
     ){
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater
@@ -96,7 +97,7 @@ class DesignDetailsActivity : AppCompatActivity() {
 
         etDesignName.setText(intent.getStringExtra("designName").toString())
         etDesignDescription.setText(intent.getStringExtra("designDescription").toString())
-        etDesignName.setText(intent.getStringExtra("designPrice").toString())
+        etDesignPrice.setText(intent.getStringExtra("designPrice").toString())
 
         mDialog.setTitle("Updating $designName Record")
 

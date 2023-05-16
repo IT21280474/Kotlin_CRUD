@@ -65,6 +65,8 @@ class InsertionActivity: AppCompatActivity() {
 
         val design = DesignModel(designId,designName,designDescription,designPrice)
 
+
+
         dbRef.child(designId).setValue(design)
             .addOnCompleteListener{
                 Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show()
