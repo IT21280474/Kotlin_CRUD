@@ -41,7 +41,7 @@ class InsertionActivity: AppCompatActivity() {
         }
 
     }
-
+//fnvc
     private fun saveDesignsData(){
         //getting values
         val designName = etDesignName.text.toString()
